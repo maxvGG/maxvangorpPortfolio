@@ -1,0 +1,14 @@
+.nav-item:hover {
+  color: #f6993f;
+  border-bottom: 2px solid #f6993f;
+}
+.nav-item a:hover {
+  color: #f6993f;
+}
+
+.nav-item .active {
+  color: #f6993f;
+}
+span {
+  display: inline-block;
+}

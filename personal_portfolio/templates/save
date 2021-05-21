@@ -1,0 +1,43 @@
+<section class="flex row">
+    <h1>My work</h1>
+    <div class="d-flex jutify-content-center">
+
+        <div class="gallery row">
+            {% for project in projects %}
+            <div class="project column col-4">
+                <div class="title">
+                    <div class="bold">
+                        {{ project.title }}
+                    </div>
+                    <div class="highlight">
+                        {{ project.technology }}
+                    </div>
+                </div>
+                <div class="img">
+                    <img class="img123" src="{{ project.image.url }}" alt="foto niet gevonden">
+                </div>
+                <a href="{% url 'project_detail' project.slug %}" class="btn contact-btn button"
+                    style="color: white;">learn more</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<section class="row">
+    <div class="col-1"></div>
+    <div class="col-5 cols">
+        <div class="jumbotron">
+            <h2>About Me</h2>
+            <p>I'm a web developer based in Utrecht in the Netherlands. I have a passion for back-end programming
+                creating apps.</p>
+        </div>
+    </div>
+    <div class="col-custom"></div>
+    <div class="col-3 max-width">
+        <div class="portrait">
+            <img src="{% static 'img/IMG_20200113_140231_604.jpg' %}" alt="me">
+        </div>
+    </div>
+</section>

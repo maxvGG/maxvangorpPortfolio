@@ -1,0 +1,6 @@
+.text {
+  opacity: 0;
+  color: #f6993f;
+  text-align: center;
+  z-index: 2;
+}

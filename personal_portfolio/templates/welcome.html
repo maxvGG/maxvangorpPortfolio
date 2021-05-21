@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<main class="container-fluid bg-dark text-light">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-7">
+            <section class="about">
+                <h1>Hey, <br> I'm <span class="orange"> Max, </span> <br> Webdeveloper. </h1>
+                <div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">I'm</div>
+                        <div class="primary-word-sub__bottom">I'm</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">a</div>
+                        <div class="primary-word-sub__bottom">a</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">junior</div>
+                        <div class="primary-word-sub__bottom">junior</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">Webdeveloper</div>
+                        <div class="primary-word-sub__bottom">Webdeveloper</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">looking</div>
+                        <div class="primary-word-sub__bottom">looking</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">to</div>
+                        <div class="primary-word-sub__bottom">to</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">create</div>
+                        <div class="primary-word-sub__bottom">create</div>
+                    </div>
+                    <div class="primary-word-sub">
+                        <div class="primary-word-sub__top">websites</div>
+                        <div class="primary-word-sub__bottom">websites</div>
+                    </div>
+                </div> <br>
+                <form action="{% url 'contact'%}">
+                    <input type="submit" value="Contact me" class="btn contact-btn">
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
+{% endblock %}
